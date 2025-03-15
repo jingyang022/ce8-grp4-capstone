@@ -29,6 +29,10 @@ jobs:
         run: terraform init
 
 # Added by Choon Yee
+
+      - name: Install Snyk CLI
+        run: npm install -g snyk
+
       - name: Run Snyk test
         run: snyk test
         env:
