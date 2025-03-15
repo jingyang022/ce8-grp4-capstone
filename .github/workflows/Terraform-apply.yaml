@@ -2,7 +2,7 @@ name: Terraform Apply
 #trigger test deployment
 on:
   push:
-    branches: ["main"]
+    branches: ["snyk"]
 
 env:
   AWS_REGION: ap-southeast-1
