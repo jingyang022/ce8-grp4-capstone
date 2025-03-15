@@ -28,7 +28,7 @@ jobs:
       - name: Terraform Init
         run: terraform init
 
-# Added by Choon Yee
+# Added by CY
 
       - name: Install Snyk CLI
         run: npm install -g snyk
