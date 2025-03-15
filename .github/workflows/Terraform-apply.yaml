@@ -44,12 +44,14 @@ jobs:
             token: ${{ secrets.SNYK_TOKEN }}
             project-name: ${{ github.ce8-grp4-app }}
 
-      - name: Terraform Validate
-        run: terraform validate
 
-      - name: Terraform Plan
-        run: terraform plan
+#      - name: Terraform Validate
+ #       run: terraform validate
 
-      - name: Terraform Apply
-        run: terraform apply --auto-approve
+  #    - name: Terraform Plan
+   #     run: terraform plan
+
+    #  - name: Terraform Apply
+     #   run: terraform apply --auto-approve
+
 # End of code
