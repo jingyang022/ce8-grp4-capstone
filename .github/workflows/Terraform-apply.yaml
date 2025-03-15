@@ -36,11 +36,11 @@ jobs:
          security:
         runs-on: ubuntu-latest
         steps:
-        - name: Checkout code
-          uses: actions/checkout@v4
-        - name: Run Snyk scan
-          uses: snyk/actions/node@master
-          with:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Run Snyk scan
+        uses: snyk/actions/node@master
+        with:
             token: ${{ secrets.SNYK_TOKEN }}
             project-name: ${{ github.ce8-grp4-app }}
 
